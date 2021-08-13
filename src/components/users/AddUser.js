@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import axios from 'axios'
 import { useHistory } from "react-router-dom";
+import InputMask from "react-input-mask";
+
 
 const AddUser = () => {
   let history = useHistory();
@@ -58,18 +60,19 @@ const AddUser = () => {
             />
           </div>
           <div className="form-group">
-            <input
+            <InputMask
               type="text"
               className="form-control form-control-lg"
               placeholder="Telefone"
               name="phone"
+              mask="(99)-99999-9999"
               value={phone}
               onChange={e => onInputChange(e)}
             />
           </div>
           <div className="form-group">
             <input
-              type="text"
+              type="password"
               className="form-control form-control-lg"
               placeholder="Sua senha"
               name="senha"

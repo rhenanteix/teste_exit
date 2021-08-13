@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { useHistory, useParams } from "react-router-dom";
+import InputMask from "react-input-mask";
+
 
 const EditClients = () => {
   let history = useHistory();
@@ -48,6 +50,7 @@ const EditClients = () => {
               className="form-control form-control-lg"
               placeholder="CNPJ"
               value={cnpj}
+              mask="99.999.999/9999-99"
               name="cnpj"
               onChange={e => onInputChange(e)}
             />
@@ -77,6 +80,7 @@ const EditClients = () => {
               type="text"
               className="form-control form-control-lg"
               placeholder="CEP"
+              mask="999-999-99"
               name="cep"
               value={cep}
               onChange={e => onInputChange(e)}
@@ -142,7 +146,7 @@ const EditClients = () => {
               onChange={e => onInputChange(e)}
             />
           </div>
-          <button className="btn btn-warning btn-block">Atualizar senha</button>
+          <button className="btn btn-warning btn-block">Atualizar cliente</button>
         </form>
       </div>
     </div>

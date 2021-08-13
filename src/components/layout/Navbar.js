@@ -27,20 +27,15 @@ const Navbar = () => {
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" exact to="/about">
-                About
-              </NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink className="nav-link" exact to="/contact">
-                Contact
+              <NavLink  className="nav-link" exact to="/ListagemClientes">
+                ListagemClientes
               </NavLink>
             </li>
           </ul>
         </div>
 
         <Link className="btn btn-outline-light" to="/users/add">Adicione novo usuário</Link>
-        <Link className="btn btn-outline-light" to="/clients/add">Adicione novo cliente</Link>
+        <Link style={{ marginLeft: 8 }} className="btn btn-outline-light" to="/clients/add">Adicione novo cliente</Link>
 
       </div>
     </nav>

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from 'axios'
 import { useHistory } from "react-router-dom";
+import InputMask from "react-input-mask";
 
 const AddClients = () => {
   let history = useHistory();
@@ -34,11 +35,12 @@ const AddClients = () => {
         <h2 className="text-center mb-4">Crie um novo cliente</h2>
         <form onSubmit={e => onSubmit(e)}>
           <div className="form-group">
-            <input
+            <InputMask
               type="text"
               className="form-control form-control-lg"
               placeholder="CNPJ"
               value={cnpj}
+              mask="99.999.999/9999-99"
               name="cnpj"
               onChange={e => onInputChange(e)}
             />
@@ -64,11 +66,12 @@ const AddClients = () => {
             />
           </div>
           <div className="form-group">
-            <input
+            <InputMask
               type="text"
               className="form-control form-control-lg"
               placeholder="CEP"
               name="cep"
+              mask="999-999-99"
               value={cep}
               onChange={e => onInputChange(e)}
             />

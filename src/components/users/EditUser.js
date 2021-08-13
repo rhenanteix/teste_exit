@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { useHistory, useParams } from "react-router-dom";
+import InputMask from "react-input-mask";
+
 
 const EditUser = () => {
   let history = useHistory();
@@ -73,6 +75,7 @@ const EditUser = () => {
               className="form-control form-control-lg"
               placeholder="Enter Your Phone Number"
               name="phone"
+              mask="99-99999-9999"
               value={phone}
               onChange={e => onInputChange(e)}
             />
@@ -87,7 +90,7 @@ const EditUser = () => {
               onChange={e => onInputChange(e)}
             />
           </div>
-          <button className="btn btn-warning btn-block">Atualizar senha</button>
+          <button className="btn btn-warning btn-block">Atualizar usuário</button>
         </form>
       </div>
     </div>

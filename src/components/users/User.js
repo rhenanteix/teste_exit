@@ -20,8 +20,8 @@ const User = () => {
   };
   return (
     <div className="container py-4">
-      <Link className="btn btn-primary" to="/">
-        back to Home
+      <Link style={{ marginBottom: 5 }} className="btn btn-primary" to="/">
+        Voltar
       </Link>
       <ul className="list-group w-50">
         <li className="list-group-item">Nome: {user.nome}</li>

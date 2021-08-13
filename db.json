@@ -15,47 +15,37 @@
       "phone": "41998883833",
       "senha": "testeeee",
       "id": 10
+    },
+    {
+      "nome": "Outro",
+      "sobrenome": "Usuário",
+      "email": "rhenancontato@gmail.com",
+      "phone": "41-98895-0911",
+      "senha": "123456",
+      "id": 11
+    },
+    {
+      "nome": "Rhenan ",
+      "sobrenome": "Teuxeura",
+      "email": "tooronagashi@outlook.com.br",
+      "phone": "11-90000-000_",
+      "senha": "1224242dsdsfd",
+      "id": 12
     }
   ],
   "clients": [
     {
-      "cnpj": "27.900.115/0001-99",
-      "nome_fantasia": "Rhenan Silverio Teixeira",
-      "razao_social": "Rhenan Dev",
-      "cep": "80050-370",
-      "endereco": "Avenida Presidente Affonso Camargo",
-      "numero": "660",
-      "complemento": "APTO 02 - Bloco A",
-      "bairro": "Cristo Rei",
-      "cidade": "Curitiba",
+      "cnpj": "35.434.343/4343-43",
+      "nome_fantasia": "DevSA",
+      "razao_social": "Devss",
+      "cep": "323-232-32",
+      "endereco": "rua teste",
+      "numero": "11",
+      "complemento": "rua ",
+      "bairro": "centro",
+      "cidade": "curitiba",
       "uf": "PR",
       "id": 1
-    },
-    {
-      "cnpj": "27.900.115/0001-99",
-      "nome_fantasia": "Rhenan Silverio Teixeira",
-      "razao_social": "Rhenan Dev",
-      "cep": "80050-370",
-      "endereco": "Avenida Presidente Affonso Camargo",
-      "numero": "3449",
-      "complemento": "APTO 02 - Bloco A",
-      "bairro": "Cristo Rei",
-      "cidade": "Curitiba",
-      "uf": "PR",
-      "id": 2
-    },
-    {
-      "cnpj": "Empresa 2",
-      "nome_fantasia": "Empresa dois",
-      "razao_social": "Rhenan Dev",
-      "cep": "80060050",
-      "endereco": "Avenida Presidente Affonso Camargo",
-      "numero": "66022",
-      "complemento": "Bloco A Apt 2",
-      "bairro": "Cristo Rei",
-      "cidade": "Curitiba",
-      "uf": "PR",
-      "id": 3
     }
   ]
 }

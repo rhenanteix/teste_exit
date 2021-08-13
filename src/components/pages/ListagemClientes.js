@@ -23,8 +23,8 @@ const ListagemClientes = () => {
     <div className="container">
       <div className="py-4">
         <h1>Listagem de clientes</h1>
-        <table class="table border shadow">
-          <thead class="thead-dark">
+        <table class="table table-hover">
+          <thead class="thead-light">
             <tr>
               <th scope="col">#</th>
               <th scope="col">CNPJ</th>
@@ -40,7 +40,8 @@ const ListagemClientes = () => {
               <th>Ações</th>
             </tr>
           </thead>
-          <tbody >
+        
+          <tbody > 
             {clients.map((client, index) => (
               <tr>
                 <th scope="row">{index + 1}</th>
@@ -48,7 +49,7 @@ const ListagemClientes = () => {
                 <td>{client.nome_fantasia}</td>
                 <td>{client.razao_social}</td>
                 <td>{client.cep}</td>
-                <td>{client.endreco}</td>
+                <td>{client.endereco}</td>
                 <td>{client.numero}</td>
                 <td>{client.complemento}</td>
                 <td>{client.bairro}</td>
@@ -73,8 +74,10 @@ const ListagemClientes = () => {
                 </td>
               </tr>
             ))}
-          </tbody>
+         </tbody>
+       
         </table>
+       
       </div>
     </div>
   );
